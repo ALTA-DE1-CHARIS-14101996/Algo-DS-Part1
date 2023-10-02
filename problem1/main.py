@@ -1,5 +1,14 @@
 def remove_duplicates(array):
-    return 0
+    if not array:
+        return 0
+    else:
+        remove = set(array)
+        makelist = list(remove)
+        result = len(makelist)
+    return result
+
+#versi lite
+    # return (len(set(array)))
 
 if __name__ == "__main__":
     print(remove_duplicates([2, 3, 3, 3, 6, 9, 9]))  # 4
